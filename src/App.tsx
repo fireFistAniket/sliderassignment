@@ -25,18 +25,18 @@ function App() {
       {...props}
     />
   ))(({ theme }) => ({
-    width: 43, // Using 100% might not be ideal, adjust based on your specific layout needs
-    height: 26, // Consider using 'em' or 'rem' for relative sizing if needed
+    width: 43, 
+    height: 26, 
     padding: 0,
     "& .MuiSwitch-switchBase": {
       padding: 0,
       margin: 2,
       transitionDuration: "300ms",
       "&.Mui-checked": {
-        transform: "translateX(16px)", // This value might need to be adjusted if the overall size changes
-        color: "#fff", // Thumb color when checked
+        transform: "translateX(16px)",
+        color: "#fff", 
         "& + .MuiSwitch-track": {
-          backgroundColor: "#25ae9d", // Track color when checked
+          backgroundColor: "#25ae9d",
           opacity: 1,
           border: 0,
         },
@@ -60,12 +60,12 @@ function App() {
     },
     "& .MuiSwitch-thumb": {
       boxSizing: "border-box",
-      width: 22, // Consider using 'em' or 'rem' here
-      height: 22, // Consider using 'em' or 'rem' here
-      backgroundColor: "#fff", // Making sure the thumb is white by default
+      width: 22, 
+      height: 22, 
+      backgroundColor: "#fff",
     },
     "& .MuiSwitch-track": {
-      borderRadius: 13, // This will be half of the height if the height changes
+      borderRadius: 13, 
       backgroundColor: theme.palette.mode === "light" ? "#E9E9EA" : "#39393D",
       opacity: 1,
       transition: theme.transitions.create(["background-color"], {
