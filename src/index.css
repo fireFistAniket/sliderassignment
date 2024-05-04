@@ -1,0 +1,40 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.mainBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.sliderBody {
+  background: #fff;
+  border-radius: 0.5vmax;
+  padding: 2vmax 5vmin;
+  min-width: 50vmax;
+  max-width: 50vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2vmax;
+  transition: height 3s ease-in-out 500ms;
+}
+
+.switchBox {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 1rem;
+}
+
+.autoPaymentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1vmin;
+}
